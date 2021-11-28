@@ -1,4 +1,7 @@
 defmodule Mix.Tasks.D07.P2 do
+  @moduledoc """
+  This module implements the D07P2 task.
+  """
   use Mix.Task
 
   import AdventOfCode.Day07
@@ -12,6 +15,7 @@ defmodule Mix.Tasks.D07.P2 do
       else:
         input
         |> part2()
+        # credo:disable-for-next-line Credo.Check.Warning.IoInspect
         |> IO.inspect(label: "Part 2 Results")
   end
 end
